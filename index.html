@@ -1,18 +1,29 @@
 <!DOCTYPE html>
-<html lang="ru=RU">
+<html lang="en">
 <head>
-<script>
-<a href="#" onclick="closeWindow(); return false;">Закрыть страницу</a>
- 
-<script>
-function closeWindow(){
-	if (confirm('Вы действительно хотите закрыть страницу?')) {
-		window.close();
-	}
-}
-</script>
-</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        a{
+            width: 100px;
+            height: 50px;
+            background-color: brown;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
+    <!-- This is a button -->
+    <a href="javascript:close_tab();">close browser tab</a>
+
+    <script src="script.js"></script>  
 </body>
 </html>
