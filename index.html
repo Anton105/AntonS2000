@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru=RU">
 <head>
-setTimeout(function() { 
-window.close();
+<script>
+var childWindow = window.open('http://google.com');
+setTimeout(function () {
+  childWindow.close();
 }, 6000);
+</script>
 </head>
 <body>
 </body>
