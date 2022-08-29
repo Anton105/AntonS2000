@@ -2,10 +2,15 @@
 <html lang="ru=RU">
 <head>
 <script>
-var childWindow = window.open('http://google.com');
-setTimeout(function () {
-  childWindow.close();
-}, 6000);
+<a href="#" onclick="closeWindow(); return false;">Закрыть страницу</a>
+ 
+<script>
+function closeWindow(){
+	if (confirm('Вы действительно хотите закрыть страницу?')) {
+		window.close();
+	}
+}
+</script>
 </script>
 </head>
 <body>
